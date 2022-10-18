@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de assinatura de e-mail</title>
+</head>
+<body>
+  <form id="form">
+    <input name="name" placeholder="Nome" type="text" />
+    <input name="job" placeholder="Cargo" type="text" />
+    <button>Gerar</button>
+  </form>
+
+  <br />
+  <br />
+  <br />
+
+  <div id="signature" style="border: 1px solid #000; padding: 12px; display: none;">
+    <div style="color:rgb(0,0,0);font-family:&quot;Times New Roman&quot;;font-size:medium">
+      <table width="450" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+          <tr>
+            <td width="50">
+              <a href="http://www.mssoftwares.com.br/" target="_blank">
+                <img src="https://i.imgur.com/6bozl32.png" alt="MS Softwares Logo" border="0" width="50px">
+              </a>
+            </td>
+            <td width="300" style="font-family:Helvetica;font-size:12px;line-height:20px">
+              <span id="username" style="color:rgb(52,52,52);font-size:15px;line-height:15px"></span>
+              <br>
+              <span id="userjob" style="color:rgb(90,90,90);font-size:11px;font-weight:bold;text-transform:uppercase"></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+    </div>
+  </div>
+
+  <button style="display: none;" id="copy" onclick="copy()">Copiar assinatura</button>
+
+  <script src="./index.js"></script>
+</body>
+</html>
